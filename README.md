@@ -33,6 +33,7 @@ User Query → LLM Classifier → Document Type → Relevant Index → RAG Engin
 ---
 
 ##  Project Structure
+
 ├── Final_RAG_Pipeline_Vishal.ipynb # Main code notebook
 ├── sample_contract.pdf # Example input PDFs
 ├── bank_statement.pdf
