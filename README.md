@@ -1,5 +1,5 @@
 # SmartRAG_AI_ASST_Extern
-# 📄 Smart RAG: A Document-Aware AI Assistant
+#  Smart RAG: A Document-Aware AI Assistant
 
 **Externship Project – Outamation | Extern Platform**  
 _By Chelluri Sai Vishal (June 2025)_
@@ -8,13 +8,13 @@ A full Retrieval-Augmented Generation (RAG) system that classifies documents bef
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 Smart RAG intelligently classifies documents like **Payslips**, **Bank Statements**, and **Appraisals** before routing user queries to the correct index. This ensures the system retrieves the most relevant content, improving both **speed** and **accuracy** of responses.
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 User Query → LLM Classifier → Document Type → Relevant Index → RAG Engine → Answer
 
@@ -22,7 +22,7 @@ User Query → LLM Classifier → Document Type → Relevant Index → RAG Engin
 
 ---
 
-## 🔧 Features
+##  Features
 
 - ✅ Document-type classification with **MiniLM embeddings**
 - ✅ Retrieval routing to **per-type FAISS vector stores**
@@ -32,7 +32,7 @@ User Query → LLM Classifier → Document Type → Relevant Index → RAG Engin
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ├── Final_RAG_Pipeline_Vishal.ipynb # Main code notebook
 ├── sample_contract.pdf # Example input PDFs
 ├── bank_statement.pdf
@@ -42,19 +42,19 @@ User Query → LLM Classifier → Document Type → Relevant Index → RAG Engin
 
 ---
 
-## 🧪 Sample Query Evaluation
+##  Sample Query Evaluation
 
 | Query                             | Answered Correctly | Relevance | Time  |
 |----------------------------------|---------------------|-----------|-------|
-| What is the net salary?          | ✅ Yes              | ⭐⭐⭐⭐⭐     | 3.5s  |
-| How much was the last transaction? | ✅ Yes            | ⭐⭐⭐⭐      | 1.0s  |
-| What is the estimated home value? | ❌ No              | ❌        | —     |
+| What is the net salary?          |  Yes                |⭐⭐⭐⭐⭐| 3.5s  |
+| How much was the last transaction? | Yes              |⭐⭐⭐⭐ | 1.0s  |
+| What is the estimated home value? |  No                |❌        | —     |
 
-💡 *Insight:* Misclassification leads to total failure → routing is crucial.
+ *Insight:* Misclassification leads to total failure → routing is crucial.
 
 ---
 
-## 📦 Tech Stack
+##  Tech Stack
 
 - **Mistral 7B (GGUF)** – via `llama-cpp-python`
 - **FAISS** – vector search for chunked document retrieval
@@ -65,7 +65,7 @@ User Query → LLM Classifier → Document Type → Relevant Index → RAG Engin
 
 ---
 
-## 📈 Lessons Learned
+##  Lessons Learned
 
 - Classification is *more important* than model size.
 - Chunking and retrieval outweigh pure LLM power.
@@ -73,14 +73,14 @@ User Query → LLM Classifier → Document Type → Relevant Index → RAG Engin
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
-- 🔄 Add **hybrid retrieval** (keyword + vector)
-- 🔁 Integrate **reranking layer** using LLMs
-- 🌐 Deploy using **Gradio** for live demo
-- 🧱 Switch to **Qdrant or Weaviate** for persistent vector storage
+-  Add **hybrid retrieval** (keyword + vector)
+-  Integrate **reranking layer** using LLMs
+-  Deploy using **Gradio** for live demo
+-  Switch to **Qdrant or Weaviate** for persistent vector storage
 
 ---
 
-> 📌 _Project submitted for review under Outamation’s Externship via Extern. Repository is private until completion._
+>  _Project submitted for review under Outamation’s Externship via Extern. Repository is private until completion._
 
